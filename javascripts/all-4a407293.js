@@ -34,4 +34,4 @@ for(o=0;i=t[o++];)for(;r.indexOf(" "+i+" ")>=0;)r=r.replace(" "+i+" "," ");a=e?i
 *
 * Thanks to Giovanni Difeterici (http://www.gdifeterici.com/)
 */
-function(e){e.fn.flowtype=function(t){var n=e.extend({maximum:9999,minimum:1,maxFont:9999,minFont:1,fontRatio:35},t),r=function(t){var r=e(t),i=r.width(),o=i>n.maximum?n.maximum:i<n.minimum?n.minimum:i,a=o/n.fontRatio,s=a>n.maxFont?n.maxFont:a<n.minFont?n.minFont:a;r.css("font-size",s+"px")};return this.each(function(){var t=this;e(window).resize(function(){r(t)}),r(this)})}}(jQuery),$(".hero__large-title").flowtype({minFont:30,maxFont:100,fontRatio:20});
+function(e){e.fn.flowtype=function(t){var n=e.extend({maximum:9999,minimum:1,maxFont:9999,minFont:1,fontRatio:35},t),r=function(t){var r=e(t),i=r.width(),o=i>n.maximum?n.maximum:i<n.minimum?n.minimum:i,a=o/n.fontRatio,s=a>n.maxFont?n.maxFont:a<n.minFont?n.minFont:a;r.css("font-size",s+"px")};return this.each(function(){var t=this;e(window).resize(function(){r(t)}),r(this)})}}(jQuery),$(".hero__large-title").flowtype({fontRatio:10});
